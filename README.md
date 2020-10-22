@@ -1,14 +1,11 @@
 # Node-RED AI Photo Booth Workshop
 
 
-For the workshop instructions please visit this site : [https://binnes.github.io/esp8266Workshop/](https://binnes.github.io/esp8266Workshop/)
+This is the source repository for the Node-RED AI Photo Booth Workshop.
 
-There is also a downloadable PDF containing the workshop instructions available [here](https://binnes.github.io/esp8266Workshop/pdf/esp8266Workshop.pdf)
+To view the workshop, visit this site: [https://knolleary.net/node-red-workshop-photobooth/](https://knolleary.net/node-red-workshop-photobooth/).
 
 ## Updating content
 
-The workshop instructions are hosted on GitHub pages and are automatically generated from the Markdown in the docs folder of this repo.
-
-The site is automatically regenerated when a **push** or **pull request** is made to the **master** branch of this GitHub repository.  
-
-A GitHub Action, which is configured by the .github folder in this repository, runs the commands to update the documentation site.
+The workshop material is hosted on GitHub pages and is automatically generated
+using a GitHub Action from the content in the docs folder of this repository.

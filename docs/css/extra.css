@@ -24,3 +24,8 @@ img.center {
   display: block;
   margin: 0 auto;
 }
+
+:root>* {
+    --md-primary-fg-color: #a44;
+    --md-footer-bg-color: #444;
+}

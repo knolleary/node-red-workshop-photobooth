@@ -5,8 +5,11 @@ site_url: https://knolleary.github.io/node-red-workshop-photobooth/
 site_author: Nick O'Leary
 repo_name: knolleary/node-red-workshop-photobooth
 repo_url: https://github.com/knolleary/node-red-workshop-photobooth
+edit_uri: edit/main/docs/
 theme:
     name: material
+    icon:
+        repo: fontawesome/brands/github
 use_directory_urls: false
 plugins:
   - search
