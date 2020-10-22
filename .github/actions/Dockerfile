@@ -18,8 +18,8 @@ RUN apk add --no-cache \
     fontconfig && \
     update-ms-fonts && \
     fc-cache -f
-
-RUN pip install --no-cache-dir mkdocs mkdocs-with-pdf mkdocs-material pymdown-extensions pygments
+    
+RUN pip install --no-cache-dir mkdocs mkdocs-with-pdf mkdocs-material
 
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh

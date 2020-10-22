@@ -12,6 +12,6 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v2
-
+        
       - name: generate site
         uses: ./.github/actions/

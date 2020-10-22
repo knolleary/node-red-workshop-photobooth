@@ -6,7 +6,7 @@ IoT workshop based on ESP8266, a DHT11/22 and NeoPixel RGB LED with data analysi
 
 ### Stream Environmental Conditions to The Cloud
 
-Learn how to connect an ESP8266 to the **IBM Internet of Things (IoT) Platform** over MQTT and stream environmental data from the sensors to the IBM Cloud.  
+Learn how to connect an ESP8266 to the **IBM Internet of Things (IoT) Platform** over MQTT and stream environmental data from the sensors to the IBM Cloud. 
 
 Workshop attendees will learn about ESP8266 programming, IoT Security, MQTT, IoT Platform, Node-RED, cloud storage, data analytics and visualisation techniques.
 

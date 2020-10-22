@@ -26,3 +26,5 @@ extra_css:
     - css/pdf-print.css
 nav:
   - Home: index.md
+  - Additional:
+    - Resources: RESOURCES.md
