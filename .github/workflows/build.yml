@@ -2,9 +2,9 @@ name: GenerateSite
 
 on:
   push:
-    branches: [master]
+    branches: [main]
   pull_request:
-    branches: [master]
+    branches: [main]
 jobs:
   generate:
     name: 'Run mkdocs gh-deploy'
@@ -12,6 +12,6 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v2
-        
+
       - name: generate site
         uses: ./.github/actions/
