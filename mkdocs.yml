@@ -1,0 +1,28 @@
+site_name: Node-RED AI Photo Booth Workshop
+site_description: >-
+  A workshop for creating an AI-infused photo booth application using Node-RED and TensorFlow.js
+site_url: https://knolleary.github.io/node-red-workshop-photobooth/
+site_author: Nick O'Leary
+repo_name: knolleary/node-red-workshop-photobooth
+repo_url: https://github.com/knolleary/node-red-workshop-photobooth
+theme:
+    name: material
+use_directory_urls: false
+plugins:
+  - search
+  - with-pdf:
+      cover_subtitle: My subtitle
+      output_path: pdf/photoboothWorkshop.pdf
+markdown_extensions:
+  - attr_list
+  - admonition
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - pymdownx.superfences
+  - pymdownx.highlight
+extra_css:
+    - css/extra.css
+    - css/pdf-print.css
+nav:
+  - Home: index.md
