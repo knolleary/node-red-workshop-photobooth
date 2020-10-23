@@ -29,3 +29,15 @@ img.center {
     --md-primary-fg-color: #a44;
     --md-footer-bg-color: #444;
 }
+.md-typeset .admonition.note, .md-typeset details.note {
+    border-color: #a44;
+}
+.md-typeset .note>.admonition-title, .md-typeset .note>summary {
+    border-color: #a44;
+    background-color: rgba(170,68,68,.1);
+}
+
+.md-typeset .note>.admonition-title::before, .md-typeset .note>summary::before {
+    background-color: #a44;
+}
+

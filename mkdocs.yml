@@ -8,7 +8,9 @@ repo_url: https://github.com/knolleary/node-red-workshop-photobooth
 edit_uri: edit/main/docs/
 theme:
     name: material
+    custom_dir: theme/
     icon:
+        logo: material/school
         repo: fontawesome/brands/github
 use_directory_urls: false
 plugins:
@@ -27,5 +29,22 @@ extra_css:
     - css/pdf-print.css
 nav:
   - Home: index.md
+  - 1 - Introduction:
+    - Introduction: part1/README.md
+  - 2 - Node-RED:
+    - Introduction: part2/README.md
+    - Install Node-RED: part2/install.md
+    - Enabling Projects: part2/projects.md
+    - Installing Nodes: part2/installing-nodes.md
+  - 3 - Node-RED Dashboard:
+    - Introduction: part3/README.md
+    - Create a dashboard: part3/create-dashboard.md
+    - Adding controls: part3/adding-controls.md
+  - 4 - TensorFlow:
+    - Intro: part4/README.md
+  - 5 - Creating a container:
+    - Intro: part5/README.md
+  - 6 - Summary:
+    - Intro: part6/README.md
   - Additional:
     - Resources: RESOURCES.md
