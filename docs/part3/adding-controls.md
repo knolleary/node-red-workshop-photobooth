@@ -7,8 +7,8 @@
 The `ui_webcam` node is fairly self-contained - providing both the live view
 of the camera as well as the button to trigger taking a photo.
 
-They node also supports being triggered by the flow it is wired to - something
-we'll make use of next.
+The node also supports being triggered by passing it a message with the `msg.capture`
+property set - something we'll make use of next.
 
 1. Add a `ui_button` node. Configure it as follows:
      - Set its group to the existing `WebCam` group.
@@ -23,7 +23,6 @@ we'll make use of next.
 
 The Dashboard will now show the new button beneath the webcam widget - clicking
 it will trigger a photo to be taken.
-
 
 ## Adding a Clear button
 
