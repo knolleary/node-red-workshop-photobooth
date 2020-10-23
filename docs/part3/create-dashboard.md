@@ -118,6 +118,6 @@ The next task is to start writing the photo to a file.
      - Untick the 'Add newline to each payload' option
 4. Deploy the updates.
 
-Now when you take photo from the dashboard, it should get saved to a file.
+Now when you take photo from the dashboard, it will get saved to a file.
 
 
