@@ -35,7 +35,7 @@ to clone the repository to your local computer so you have them readily availabl
 Provides an overview of the course, introduces the technologies that will be used
 and demonstrates the end result of the application the workshop will teach you to create.
 
-### [2 - Node-RED](part1/)
+### [2 - Node-RED](part2/)
 
 The second part of the workshop introduces Node-RED - the low-code programming
 tool for event-driven applications. It will help you:
@@ -46,12 +46,12 @@ tool for event-driven applications. It will help you:
 
 If you are already familiar with Node-RED, you can skip this part.
 
-### [3 - Node-RED Dashboard](part1/)
+### [3 - Node-RED Dashboard](part3/)
 
 In this part you will install the Node-RED Dashboard set of nodes and learn how
 to quickly create a simple photo booth application using them.
 
-### [4 - TensorFlow in Node-RED](part1/)
+### [4 - TensorFlow in Node-RED](part4/)
 
 This part brings TensorFlow into Node-RED. It will look at some of the different
 nodes for TensorFlow that are available from the community and compares their
@@ -59,12 +59,12 @@ capabilities.
 
 You will then integrate the TensorFlow nodes into your photo booth application.
 
-### [5 - Creating a container](part1/)
+### [5 - Creating a container](part5/)
 
 In this part, you will add a Dockerfile to your Node-RED project that can be used
 to create a containerised version of your application.
 
-### [6 - Summary and next steps](part1/)
+### [6 - Summary and next steps](part6/)
 
 Finally, we'll review what you have covered in this workshop and highlight a number
 of areas where the application you've created could be expanded as a follow-on
