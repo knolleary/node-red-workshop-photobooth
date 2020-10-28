@@ -41,7 +41,9 @@ nav:
     - Create a dashboard: part3/create-dashboard.md
     - Adding controls: part3/adding-controls.md
   - 4 - TensorFlow:
-    - Intro: part4/README.md
+    - Introduction: part4/README.md
+    - TensorFlow in Node-RED: part4/adding-tf.md
+    - Displaying detected objects: part4/display-objects.md
   - 5 - Creating a container:
     - Intro: part5/README.md
   - 6 - Summary:
