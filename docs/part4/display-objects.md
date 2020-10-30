@@ -71,7 +71,7 @@ Now when you capture an image on the dashboard, the table should list the detect
 objects.
 
 
-!!! idea "Side Quest"
+!!! idea "Side Quest #1"
     The JSONata expression used in the Change node mapped the `score` property
     of each detected object from its original `0-1` range to the `0-100` range
     expected by the `ui_table` node's "Progress" column type.
@@ -83,6 +83,19 @@ objects.
     Edit the table node to display the score using the star format. See if you can
     modify the expression in the Change node to map the original score to the required
     `0-5` range.
+
+
+!!! idea "Side Quest #2"
+    With the current dashboard, when an image is captured it gets displayed in
+    place of the live web cam view until the clear button is clicked.
+
+    However clicking the button does not clear the table we've just added.
+
+    Using what you've learnt so far, build a flow between the Clear button and
+    the table node that will clear the table when the button is clicked.
+
+    *Hint:* think about what payload must be passed to the table in order to clear it.
+
 
 !!! information "Placeholder for the flow"
     ```

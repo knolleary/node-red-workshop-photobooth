@@ -44,6 +44,7 @@ nav:
     - Introduction: part4/README.md
     - TensorFlow in Node-RED: part4/adding-tf.md
     - Displaying detected objects: part4/display-objects.md
+    - Selecting objects to display: part4/select-objects.md
   - 5 - Creating a container:
     - Intro: part5/README.md
   - 6 - Summary:
