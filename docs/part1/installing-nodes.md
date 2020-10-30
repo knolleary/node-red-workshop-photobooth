@@ -1,4 +1,4 @@
-# 2 - Node-RED
+# 1 - Node-RED
 
 ## Installing Nodes
 

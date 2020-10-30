@@ -15,9 +15,9 @@ theme:
 use_directory_urls: false
 plugins:
   - search
-  - with-pdf:
-      cover_subtitle: NodeConf Remote 2020
-      output_path: pdf/node-red-workshop-photobooth.pdf
+  # - with-pdf:
+  #     cover_subtitle: NodeConf Remote 2020
+  #     output_path: pdf/node-red-workshop-photobooth.pdf
 markdown_extensions:
   - attr_list
   - admonition
@@ -29,25 +29,28 @@ extra_css:
     - css/pdf-print.css
 nav:
   - Home: index.md
-  - 1 - Introduction:
+  - 1 - Node-RED:
     - Introduction: part1/README.md
-  - 2 - Node-RED:
+    - Install Node-RED: part1/install.md
+    - Enabling Projects: part1/projects.md
+    - Installing Nodes: part1/installing-nodes.md
+    - Creating a Flow: part1/create-flow.md
+    - Committing Changes: part1/commit-changes.md
+  - 2 - Node-RED Dashboard:
     - Introduction: part2/README.md
-    - Install Node-RED: part2/install.md
-    - Enabling Projects: part2/projects.md
-    - Installing Nodes: part2/installing-nodes.md
-  - 3 - Node-RED Dashboard:
+    - Create a dashboard: part2/create-dashboard.md
+    - Adding controls: part2/adding-controls.md
+  - 3 - TensorFlow:
     - Introduction: part3/README.md
-    - Create a dashboard: part3/create-dashboard.md
-    - Adding controls: part3/adding-controls.md
-  - 4 - TensorFlow:
+    - TensorFlow in Node-RED: part3/adding-tf.md
+    - Displaying detected objects: part3/display-objects.md
+    - Selecting objects to display: part3/select-objects.md
+  - 4 - Containerization:
     - Introduction: part4/README.md
-    - TensorFlow in Node-RED: part4/adding-tf.md
-    - Displaying detected objects: part4/display-objects.md
-    - Selecting objects to display: part4/select-objects.md
-  - 5 - Creating a container:
+    - Package file: part4/package.md
+    - Settings file: part4/settings.md
+    - Dockerfile: part4/dockerfile.md
+  - 5 - Summary:
     - Intro: part5/README.md
-  - 6 - Summary:
-    - Intro: part6/README.md
   - Additional:
     - Resources: RESOURCES.md

@@ -1,4 +1,4 @@
-# 2 - Node-RED
+# 2 - Node-RED Dashboard
 
 ## Create a dashboard
 

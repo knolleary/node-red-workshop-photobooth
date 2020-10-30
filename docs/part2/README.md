@@ -1,18 +1,31 @@
-# 2 - Node-RED
+# 3 - Node-RED Dashboard
 
-## Introducing Node-RED
+## Introducing Node-RED Dashboard
 
-Node-RED is a programming tool for building event-driven application. It takes
-a low-code approach - which means rather than write lots of code, you build
-applications by using its visual editor to create flows of nodes that describe
-what should happen when particular events happen.
 
-For example, the `HTTP In` node can be configured to list on a particular path.
-When an HTTP request arrives on that path the node is triggered. It generates
-a message containing information about the request and passes it on to the nodes
-it is wired to. They in turn do whatever work they need to do using the message.
+Node-RED Dashboard is a set of nodes you can install into Node-RED that make
+is easy to create a web page that can interact with your flows.
 
-Such as generating HTML content and adding it to the message before being
-passed on through the flow. In this example, the flow ends with an `HTTP Response`
-node which responds to the original HTTP request using the information in the
-message.
+It comes with nodes to add buttons, text inputs, charts and other widgets.
+
+It does not provide the full flexibility of creating a page from scratch, but it
+is a good choice for getting something created quickly and easily.
+
+!!! info "Other dashboard options"
+    There are other sets of nodes available from the community that can be
+    used to create web pages connected to Node-RED flows. One such example is
+    [UIbuilder](https://flows.nodered.org/node/node-red-contrib-uibuilder) that
+    does not provide the pre-build widgets of Node-RED Dashboard, but does allow
+    you to build the page from your own HTML/JavaScript/CSS.
+
+    We use Node-RED Dashboard in this workshop for the convenience it provides
+    in building the web page with a minimum of any custom coding.
+
+## Installing Node-RED Dashboard
+
+Using the Manage Palette feature in the editor, install the following modules:
+
+ - `node-red-dashboard` - be sure to install this one *first*.
+ - `node-red-node-ui-table`
+ - `node-red-node-ui-webcam`
+
