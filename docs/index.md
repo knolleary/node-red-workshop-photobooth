@@ -28,6 +28,8 @@ and this site is automatically generated from it. The repository also contains
 examples and other content that can be used through the workshop. You may want
 to clone the repository to your local computer so you have them readily available.
 
+You can also download a PDF version of this workshop [here](https://knolleary.net/node-red-workshop-photobooth/pdf/node-red-workshop-photobooth.pdf).
+
 ## Workshop Outline
 
 ### [1 - Introduction](part1/)

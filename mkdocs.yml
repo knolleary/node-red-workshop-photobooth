@@ -15,9 +15,9 @@ theme:
 use_directory_urls: false
 plugins:
   - search
-#  - with-pdf:
-#      cover_subtitle: My subtitle
-#      output_path: pdf/photoboothWorkshop.pdf
+  - with-pdf:
+      cover_subtitle: NodeConf Remote 2020
+      output_path: pdf/node-red-workshop-photobooth.pdf
 markdown_extensions:
   - attr_list
   - admonition
