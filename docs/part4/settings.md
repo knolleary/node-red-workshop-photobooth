@@ -1,6 +1,4 @@
-# 4 - Containerization
-
-## Add a `settings.js` file
+# Add a `settings.js` file
 
 You are already familiar with the Node-RED `settings.js` file you had to edit
 in the earlier part of the workshop.
@@ -28,3 +26,6 @@ module.exports = {
 - Having disabled the editor, the `ui` setting moves the root url of the dashboard
   page back to `/` rather than its default `/ui`.
 
+## Next Steps
+
+The final task is to [add a `Dockerfile`](dockerfile.md).

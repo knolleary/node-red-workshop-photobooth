@@ -1,6 +1,4 @@
-# 1 - Node-RED
-
-## Enabling the Projects feature
+# Enabling the Projects feature
 
 Node-RED comes with the Projects feature that allows you to version control your
 flows by creating a git repository around them. You can then commit changes
@@ -43,6 +41,9 @@ Once you have enabled the Projects feature, the next time you load the editor
 in your browser, you will be greeted with a dialog inviting you to create your
 first project.
 
+![](../images/projects-welcome.png){: style="width:350px"}
+
+
 Click the `Create Project` button and follow the steps it takes you through:
 
     - Setup your username/email used to create commits
@@ -52,3 +53,8 @@ Click the `Create Project` button and follow the steps it takes you through:
 
 
 The project will then be created under `~/.node-red/projects/<name-of-project>`.
+
+## Next Steps
+
+The next task is to [install some extra nodes into the palette](installing-nodes.md).
+

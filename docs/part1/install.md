@@ -1,6 +1,4 @@
-# 1 - Node-RED
-
-## Installing Node-RED
+# Installing Node-RED
 
 Node-RED is published as a node.js module available on npm, as well as a container
 available on Docker Hub.
@@ -78,3 +76,7 @@ the url [http://127.0.0.1:1880/](http://127.0.0.1:1880/). This will load the
 Node-RED editor - the tool used to build your applications.
 
 
+
+## Next Steps
+
+The next task is to [enable the Projects feature](projects.md).

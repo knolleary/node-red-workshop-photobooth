@@ -1,4 +1,4 @@
-# 4 - Containerization
+# Containerization
 
 ## Why create a container?
 
@@ -19,7 +19,7 @@ wrapping the application as a Docker container. Once the container has been
 created, it can be deployed just as you would any other container - pushing it
 to a cloud environment or down to edge devices.
 
-## Preparing your Node-RED project
+## Next Steps
 
 At the start of this workshop, you enabled the Projects feature. That gave
 you a git repository you can use to manage your application.
@@ -29,9 +29,10 @@ create a deployable container.
 
 This involves:
 
- - updating the project's `package.json` file,
- - adding a `settings.js` file
- - adding a `Dockerfile`
+ - [Updating the project's `package.json` file](package.md)
+ - [Adding a `settings.js` file](settings.md)
+ - [Adding a `Dockerfile`](dockerfile.md)
+
 
 
 

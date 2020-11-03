@@ -1,6 +1,4 @@
-# 1 - Node-RED
-
-## Committing Changes
+# Committing Changes
 
 Before we move on with the workshop, the next thing to learn about is how to commit
 changes you've made in your project.
@@ -17,12 +15,27 @@ changes you've made in your project.
 2. You should see your flow file listed in the Local Files section. Clicking on
    it will open a dialog showing the changes to the file since it was last
    committed.
+
+     ![](../images/history.png){: style="width: 200px"}
+
 3. Click the `+` that appears when you hovered over the file name. The entry
    will move to the 'Changes to commit' section.
 4. Do the same for any other files in the Local Files section.
 5. Click the `commit` button at the top of the 'Changes to commit' section.
 6. Enter a commit message and click the Commit button.
+
+     ![](../images/history-commit.png){: style="width: 200px"}
+
+
 7. Expand the 'Commit History' section of the sidebar. This lists the history
    of commits for the project. At this point there should be two commits - the
    original commit from when the project was created, and the one you've just
    created.
+
+     ![](../images/history-list.png){: style="width: 200px"}
+
+## Next Steps
+
+Your Node-RED environment is all setup now for the rest of this workshop.
+
+In the next part, we'll start looking at [Node-RED Dashboard](/part2/).

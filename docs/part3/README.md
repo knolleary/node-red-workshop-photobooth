@@ -1,6 +1,4 @@
-# 3 - TensorFlow
-
-## Introducing TensorFlow
+# Introducing TensorFlow
 
 TensorFlow is open source library for Machine Learning. It provides a platform
 that can be used to develop and train ML models and integrate them into applications.
@@ -81,3 +79,11 @@ module provides a set of nodes that each wraps a different pre-built model.
 This includes the CoCo-SSD Object Detection model, as well as human pose and hand
 pose detection.
 
+## Next Steps
+
+Having introduced some of the TensorFlow nodes available in Node-RED,
+in this part of the workshop you will:
+
+  - [Add TensorFlow to the Photo Booth dashboard](adding-tf.md)
+  - [Display detected objects on the dashboard](display-objects.md)
+  - [Allow the user to select what object to display](select-objects.md)

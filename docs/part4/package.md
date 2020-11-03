@@ -1,4 +1,4 @@
-# 4 - Containerization
+# Update `package.json`
 
 ## Adding dependencies
 
@@ -29,7 +29,7 @@ built.
 container will run Node-RED:
 
         "scripts": {
-            "start": "node --max-old-space-size=256 ./node_modules/node-red/red.js --userDir . --settings ./settings.js flow.json"
+            "start": "node --max-old-space-size=256 ./node_modules/node-red/red.js --userDir . --settings ./settings.js flows.json"
         }
 
     Let's take a closer look at the start command:
@@ -39,7 +39,7 @@ container will run Node-RED:
                  ./node_modules/node-red/red.js   (b)
                  --userDir .                      (c)
                  --settings ./settings.js         (d)
-                 flow.json                        (e)
+                 flows.json                        (e)
 
 
     1. This argument is used to tell node when it should start garbage collecting.
@@ -51,3 +51,6 @@ container will run Node-RED:
 3. Having made those changes, restart Node-RED and reload the editor in your browser.
 
 
+## Next Steps
+
+With the `package.js` file updated, the next task is to [add a `settings.js` file](settings.md).

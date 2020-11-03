@@ -1,6 +1,4 @@
-# 3 - Node-RED Dashboard
-
-## Introducing Node-RED Dashboard
+# Introducing Node-RED Dashboard
 
 
 Node-RED Dashboard is a set of nodes you can install into Node-RED that make
@@ -28,4 +26,11 @@ Using the Manage Palette feature in the editor, install the following modules:
  - `node-red-dashboard` - be sure to install this one *first*.
  - `node-red-node-ui-table`
  - `node-red-node-ui-webcam`
+
+## Next Steps
+
+Having installed the dashboard nodes, in this part of the workshop you will:
+
+ - [Create your initial Photo Booth Dashboard](create-dashboard.md)
+ - [Add more controls to the dashboard](adding-controls.md)
 

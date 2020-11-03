@@ -1,6 +1,4 @@
-# 3 - TensorFlow
-
-## Selecting objects to display
+# Selecting objects to display
 
 So far we have a flow that lets you take photo and then display all of the detected
 objects in it.
@@ -157,3 +155,7 @@ Now when you capture an image on the webcam, you'll see the captured image on th
 dashboard without any annotations. The table below the image will list the
 detected objects. Clicking on an object will update the image to highlight the
 selected image.
+
+## Next Steps
+
+With the application complete, the next task is to [wrap it in a container](/part4/).

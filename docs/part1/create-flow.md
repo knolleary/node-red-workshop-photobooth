@@ -1,6 +1,4 @@
-# 1 - Node-RED
-
-## Creating a flow
+# Creating a flow
 
 Before we start on the photo booth application, we're going to step through a
 quick example to help get you more familiar with Node-RED.
@@ -25,6 +23,7 @@ quick example to help get you more familiar with Node-RED.
  6. You should see the message get displayed in the Debug sidebar.
 
 
+![](../images/first-flow.png)
 
 
 !!! note "Core Nodes"
@@ -33,3 +32,43 @@ quick example to help get you more familiar with Node-RED.
 
     The [documentation has more information](https://nodered.org/docs/user-guide/nodes)
     about them.
+
+
+!!! note "Debug sidebar"
+    The Debug node and sidebar are invaluable tools when creating flows. They help
+    you understand the structure of the messages you are working.
+
+    The ["Working with messages"](https://nodered.org/docs/user-guide/messages)
+    section of the documentation gives a good introduction in how to make the
+    most of the Debug tools.
+
+## Import/Exporting Flows
+
+Node-RED flows can be imported and exported from the editor using a JSON format.
+
+To import a flow, select the Import option from the menu (or hit `Ctrl-I`). This
+opens the import dialog.
+
+Copy the JSON below, paste it in and click `Import`. You will find a number of nodes
+attached to your mouse that you can click to place into the workspace.
+
+
+!!! note "HTTP Example Flow"
+    ```
+    [{"id":"10cd970c.dcde99","type":"http in","z":"ddeb3b89.ad9748","name":"","url":"/hello","method":"get","upload":false,"swaggerDoc":"","x":140,"y":140,"wires":[["ec1f6830.222e38","43f8e071.77d4a"]]},{"id":"ec1f6830.222e38","type":"template","z":"ddeb3b89.ad9748","name":"","field":"payload","fieldType":"msg","format":"handlebars","syntax":"mustache","template":"{{# payload.name }}\n<p>Hello, {{{payload.name}}}!</p>\n{{/ payload.name }}\n{{^ payload.name }}\n<form action=\"/hello\" method=\"GET\">\n    What is your name? <input name=\"name\">\n    <button>Submit</button>\n</form>\n\n\n{{/ payload.name }}\n","output":"str","x":340,"y":140,"wires":[["87f3adff.c4e43"]]},{"id":"87f3adff.c4e43","type":"http response","z":"ddeb3b89.ad9748","name":"","statusCode":"","headers":{},"x":510,"y":140,"wires":[]},{"id":"43f8e071.77d4a","type":"debug","z":"ddeb3b89.ad9748","name":"","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"false","statusVal":"","statusType":"auto","x":350,"y":80,"wires":[]}]
+    ```
+
+This gives you a flow that starts with an `HTTP In`, configured to listen for
+requests on `/hello`. When a request arrives, it gets passed to a `Template` node
+that generates some simple HTML using the contents of the message. It then gets
+passed to an `HTTP Response` node to send back the response.
+
+You can see it in action by opening [http://localhost:1880/hello](http://localhost:1880/hello){: target="blank"}.
+
+![](../images/http-flow.png)
+
+
+## Next Steps
+
+The final task in this part of the workshop is to [commit your changes](commit-changes.md).
+

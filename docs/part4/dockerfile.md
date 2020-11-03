@@ -1,6 +1,4 @@
-# 4 - Containerization
-
-## Add a `Dockerfile`
+# Add a `Dockerfile`
 
 The final task is to add a Dockerfile and to build the container.
 

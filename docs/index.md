@@ -63,7 +63,7 @@ You will then integrate the TensorFlow nodes into your photo booth application.
 
 ### [4 - Containerization](part4/)
 
-In this part, you will add a Dockerfile to your Node-RED project that can be used
+In this part, you will add a `Dockerfile` to your Node-RED project that can be used
 to create a containerised version of your application.
 
 ### [5 - Summary and next steps](part5/)

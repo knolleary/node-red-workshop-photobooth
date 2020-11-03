@@ -15,9 +15,10 @@ theme:
 use_directory_urls: false
 plugins:
   - search
-  # - with-pdf:
-  #     cover_subtitle: NodeConf Remote 2020
-  #     output_path: pdf/node-red-workshop-photobooth.pdf
+  - with-pdf:
+      cover_subtitle: NodeConf Remote 2020
+      output_path: pdf/node-red-workshop-photobooth.pdf
+      enabled_if_env: ENABLE_PDF_EXPORT
 markdown_extensions:
   - attr_list
   - admonition
@@ -28,7 +29,7 @@ extra_css:
     - css/extra.css
     - css/pdf-print.css
 nav:
-  - Home: index.md
+  - Introduction: index.md
   - 1 - Node-RED:
     - Introduction: part1/README.md
     - Install Node-RED: part1/install.md

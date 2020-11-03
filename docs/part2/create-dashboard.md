@@ -1,6 +1,4 @@
-# 2 - Node-RED Dashboard
-
-## Create a dashboard
+# Create a dashboard
 
 In this part of the workshop you will begin to create your Photo Booth application.
 
@@ -20,23 +18,40 @@ its features as well as manage its tabs, groups and widgets.
 1. Open the Dashboard sidebar
 2. Click the `+ tab` button to create a new tab.
 3. Hover over the newly added tab and click the `edit` button.
+
+       ![](../images/db-sidebar.png){: style="width: 250px"}
+
 4. In the edit dialog, give the tab a name of `AI Photo Booth` and click Update
    to close the dialog.
 5. Hover over the tab again and click the `+ group` button.
 6. Edit the new group and set its properties:
+
+       ![](../images/db-group.png){: style="width: 250px"}
+
     - Set the name to 'WebCam'
     - Set the width to `10` by clicking the button and dragging the box out to 10
       units wide.
     - Untick the 'Display group name' option
 
+       ![](../images/db-group-edit.png){: style="width: 300px"}
+
 This has created the initial layout components needed for the dashboard. You can
-now start to add content.    
+now start to add content.
+
 
 ## Adding a `ui_webcam` node
+
+!!! note "Tidy up existing flows"
+    If you followed the previous part of the workshop, you'll have some example
+    flows in your workspace. You can delete those flows as you won't need them
+    for the rest of the workshop.
 
 1. Drag a `ui_webcam` node from the `dashboard` category of the palette into your
    workspace. This node can be used to capture images from the webcam on the
    device displaying the dashboard.
+
+       ![](../images/webcam-edit.png){: style="width: 500px"}
+
 2. Double click on the node to edit its properties.
 3. Make sure the `WebCam` group you created earlier is selected in the select box.
 5. Set the size to `10x7` - note that it will not let you make it wider than the
@@ -51,14 +66,19 @@ now start to add content.
 To access the Dashboard, click the button in the top-right corner of the Dashboard
 sidebar. This will open the Dashboard in a new browser tab.
 
-!!! danger "PLACEHOLDER FOR IMAGE"
-    First dashboard
+![](../images/db-link.png){: style="width: 250px"}
+
 
 Click on the camera button in the middle of the screen to turn on the web cam.
 Your browser will ask your permission for the page to access the web cam - make
 sure to allow access or you won't get much further.
 
+![](../images/webcam-allow.png){: style="width: 250px"}
+
 You should then get a live feed of your web cam on the page.
+
+![](../images/db-first.png)
+
 
 !!! attention "Troubleshooting"
     Due to standard browser security practices, you will only be able to use
@@ -94,6 +114,9 @@ Click the button to take a photo then switch back to the Node-RED editor.
 Open the Debug sidebar. You should see a message has been logged showing the
 received payload was a Buffer. This is the raw image data in `jpeg` format.
 
+
+![](../images/webcam-debug.png)
+
 The next task is to start writing the photo to a file.
 
 ## Saving photos to a file
@@ -113,11 +136,20 @@ The next task is to start writing the photo to a file.
 
          If you are running on Windows, be sure to modify the `/tmp/` part of the
        path to something suitable.
+
+         ![](../images/change-expr.png){: style="width: 400px" }
+
 3. Configure the File node as follows:
      - Set the Action to 'overwrite file'
      - Untick the 'Add newline to each payload' option
 4. Deploy the updates.
 
-Now when you take photo from the dashboard, it will get saved to a file.
+![](../images/webcam-file.png){: style="width: 400px"}
 
+Now when you take photo from the dashboard it will get saved to a file.
+
+
+## Next Steps
+
+The next task is to [add some different controls to the dashboard](adding-controls.md).
 

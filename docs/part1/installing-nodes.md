@@ -1,6 +1,4 @@
-# 1 - Node-RED
-
-## Installing Nodes
+# Installing Nodes
 
 The building blocks of any Node-RED application are the nodes in its palette.
 
@@ -24,6 +22,8 @@ have installed and a searchable catalogue of modules available to install.
 
 Switch to the Install tab and search for `random` - you should see `node-red-node-random` in the list below. Click the `install` button next to it.
 
+![](../images/palette-install.png){: style="width:350px"}
+
 After a short time the node will be installed and added to the palette.
 
 ### Command-line
@@ -39,3 +39,8 @@ npm install node-red-node-random
     installed by Node-RED or npm. You should always check a module's readme
     for further information. This will be particularly true of some of the
     TensorFlow nodes we'll be using later in this workshop.
+
+## Next Steps
+
+The next task is to [create you first flow in Node-RED](create-flow.md).
+
