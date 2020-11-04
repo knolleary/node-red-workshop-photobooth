@@ -28,11 +28,19 @@ After a short time the node will be installed and added to the palette.
 
 ### Command-line
 
-To install on the command-line, switch to the Node-RED user directory, `~/.node-red` by default, and run the appropriate `npm install` command. For example:
+To install on the command-line, switch to the Node-RED user directory and run the appropriate `npm install` command. For example:
 
 ```
 npm install node-red-node-random
 ```
+
+!!! note "Node-RED User Directory"
+    By default, Node-RED creates a directory called `.node-red` in the user's
+    home directory. As it starts with a `.` it may be hidden from view by your file
+    browser.
+
+      As mentioned in the [Install](install.md) section, Node-RED logs the full
+      path to the user directory when it starts up. If in doubt, check what it says.
 
 !!! note
     Some nodes will have external dependencies that cannot be automatically

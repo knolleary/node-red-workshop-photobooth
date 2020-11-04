@@ -72,7 +72,7 @@ the location of your `User directory`.
 ## Accessing the Node-RED editor
 
 Assuming you are running Node-RED on your local computer, open a browser and access
-the url [http://127.0.0.1:1880/](http://127.0.0.1:1880/). This will load the
+the url [http://127.0.0.1:1880/](http://127.0.0.1:1880/){: target="blank"}. This will load the
 Node-RED editor - the tool used to build your applications.
 
 

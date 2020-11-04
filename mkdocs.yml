@@ -51,7 +51,6 @@ nav:
     - Package file: part4/package.md
     - Settings file: part4/settings.md
     - Dockerfile: part4/dockerfile.md
-  - 5 - Summary:
-    - Intro: part5/README.md
-  - Additional:
-    - Resources: RESOURCES.md
+    - Finishing the project: part4/one-more-thing.md
+  - 5 - Summary: part5/README.md
+  - Resources: resources.md

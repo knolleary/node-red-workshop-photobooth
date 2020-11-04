@@ -30,7 +30,7 @@ quick example to help get you more familiar with Node-RED.
     Node-RED comes with a number of core nodes that are the basic building blocks
     for any flow. It's worth spending a bit of time exploring what is available.
 
-    The [documentation has more information](https://nodered.org/docs/user-guide/nodes)
+    The [documentation has more information](https://nodered.org/docs/user-guide/nodes){: target="blank"}
     about them.
 
 
@@ -38,7 +38,7 @@ quick example to help get you more familiar with Node-RED.
     The Debug node and sidebar are invaluable tools when creating flows. They help
     you understand the structure of the messages you are working.
 
-    The ["Working with messages"](https://nodered.org/docs/user-guide/messages)
+    The ["Working with messages"](https://nodered.org/docs/user-guide/messages){: target="blank"}
     section of the documentation gives a good introduction in how to make the
     most of the Debug tools.
 
@@ -52,11 +52,18 @@ opens the import dialog.
 Copy the JSON below, paste it in and click `Import`. You will find a number of nodes
 attached to your mouse that you can click to place into the workspace.
 
-
-!!! note "HTTP Example Flow"
-    ```
-    [{"id":"10cd970c.dcde99","type":"http in","z":"ddeb3b89.ad9748","name":"","url":"/hello","method":"get","upload":false,"swaggerDoc":"","x":140,"y":140,"wires":[["ec1f6830.222e38","43f8e071.77d4a"]]},{"id":"ec1f6830.222e38","type":"template","z":"ddeb3b89.ad9748","name":"","field":"payload","fieldType":"msg","format":"handlebars","syntax":"mustache","template":"{{# payload.name }}\n<p>Hello, {{{payload.name}}}!</p>\n{{/ payload.name }}\n{{^ payload.name }}\n<form action=\"/hello\" method=\"GET\">\n    What is your name? <input name=\"name\">\n    <button>Submit</button>\n</form>\n\n\n{{/ payload.name }}\n","output":"str","x":340,"y":140,"wires":[["87f3adff.c4e43"]]},{"id":"87f3adff.c4e43","type":"http response","z":"ddeb3b89.ad9748","name":"","statusCode":"","headers":{},"x":510,"y":140,"wires":[]},{"id":"43f8e071.77d4a","type":"debug","z":"ddeb3b89.ad9748","name":"","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"false","statusVal":"","statusType":"auto","x":350,"y":80,"wires":[]}]
-    ```
+```
+[{"id":"10cd970c.dcde99","type":"http in","z":"ddeb3b89.ad9748","name":"",
+"url":"/hello","method":"get","upload":false,"swaggerDoc":"","x":140,"y":140,
+"wires":[["ec1f6830.222e38","43f8e071.77d4a"]]},{"id":"ec1f6830.222e38","type":"template",
+"z":"ddeb3b89.ad9748","name":"","field":"payload","fieldType":"msg","format":"handlebars",
+"syntax":"mustache","template":"{{# payload.name }}\n<p>Hello, {{{payload.name}}}!</p>\n{{/ payload.name }}\n{{^ payload.name }}\n<form action=\"/hello\" method=\"GET\">\n    What is your name? <input name=\"name\">\n    <button>Submit</button>\n</form>\n\n\n{{/ payload.name }}\n",
+"output":"str","x":340,"y":140,"wires":[["87f3adff.c4e43"]]},{"id":"87f3adff.c4e43",
+"type":"http response","z":"ddeb3b89.ad9748","name":"","statusCode":"","headers":{},"x":510,
+"y":140,"wires":[]},{"id":"43f8e071.77d4a","type":"debug","z":"ddeb3b89.ad9748",
+"name":"","active":true,"tosidebar":true,"console":false,"tostatus":false,
+"complete":"false","statusVal":"","statusType":"auto","x":350,"y":80,"wires":[]}]
+```
 
 This gives you a flow that starts with an `HTTP In`, configured to listen for
 requests on `/hello`. When a request arrives, it gets passed to a `Template` node

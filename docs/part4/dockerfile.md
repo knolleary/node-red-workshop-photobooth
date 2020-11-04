@@ -18,8 +18,8 @@ COPY ./package.json /data/
 RUN npm install
 
 COPY ./settings.js /data/
-COPY ./flow.json /data/
-COPY ./flow_cred.json /data/
+COPY ./flows.json /data/
+COPY ./flows_cred.json /data/
 
 ## Release image
 
@@ -70,3 +70,24 @@ docker run -p 9000:1880 --name photobooth node-red-photobooth
 
 Once that runs, you will be able to open `http://localhost:9000` to access the
 photo booth dashboard.
+
+
+!!! note "Cleaning up Docker"
+    To stop the running image, you can run the command:
+
+    ```
+    docker stop photobooth
+    ```
+
+    To delete the container, run:
+
+    ```
+    docker rm photobooth
+    ```
+
+    To delete the image, run:
+
+    ```
+    docker rmi node-red-photobooth
+    ```
+
