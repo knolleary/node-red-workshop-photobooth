@@ -90,4 +90,9 @@ photo booth dashboard.
     ```
     docker rmi node-red-photobooth
     ```
-We have almost finished the workshop. Jump to the [final step](one-more-thing.md).
+
+
+
+## Next Steps
+
+The very last (optional) step is to push the [project to GitHub](one-more-thing.md).

@@ -32,6 +32,7 @@ This involves:
  - [Updating the project's `package.json` file](package.md)
  - [Adding a `settings.js` file](settings.md)
  - [Adding a `Dockerfile`](dockerfile.md)
+ - [Push updates to GitHub](one-more-thing.md)
 
 
 
