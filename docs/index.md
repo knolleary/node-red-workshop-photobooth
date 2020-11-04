@@ -41,6 +41,8 @@ If you need help with the workshop, join the `#workshop` channel on the [Node-RE
 
 The first part of the workshop introduces Node-RED - the low-code programming
 tool for event-driven applications. It will help you:
+
+
  - get Node-RED running on your local computer
  - enable the Projects feature
  - learn how to install additional nodes into its palette
