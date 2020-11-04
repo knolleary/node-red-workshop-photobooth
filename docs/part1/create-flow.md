@@ -3,14 +3,14 @@
 Before we start on the photo booth application, we're going to step through a
 quick example to help get you more familiar with Node-RED.
 
-1. From the palette, drag an Inject node into workspace. This node can be
+1. From the palette, drag an `Inject` node into workspace. This node can be
   used to manually inject messages into a flow, or to inject them at a regular
   interval.
 
-2. Drag a Debug node into the workspace. This is a very useful node that can be
+2. Drag a `Debug` node into the workspace. This is a very useful node that can be
    used to examine messages in a flow by displaying them in the Debug sidebar.
 
-3. Drag a wire from the output of the Inject node to the input of the Debug node.
+3. Drag a wire from the output of the `Inject` node to the input of the `Debug` node.
    The wires determine where messages go when they pass from one node to another.
 
 4. Click the red Deploy button to save your changes. At this point your flow is
@@ -65,10 +65,10 @@ attached to your mouse that you can click to place into the workspace.
 "complete":"false","statusVal":"","statusType":"auto","x":350,"y":80,"wires":[]}]
 ```
 
-This gives you a flow that starts with an `HTTP In`, configured to listen for
+This gives you a flow that starts with a `HTTP In`, configured to listen for
 requests on `/hello`. When a request arrives, it gets passed to a `Template` node
 that generates some simple HTML using the contents of the message. It then gets
-passed to an `HTTP Response` node to send back the response.
+passed to a `HTTP Response` node to send back the response.
 
 You can see it in action by opening [http://localhost:1880/hello](http://localhost:1880/hello){: target="blank"}.
 
