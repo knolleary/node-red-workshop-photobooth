@@ -5,7 +5,7 @@ a low-code approach - which means rather than write lots of code, you build
 applications by using its visual editor to create flows of nodes that describe
 what should happen when particular events happen.
 
-For example, the `HTTP In` node can be configured to list on a particular path.
+For example, the `HTTP In` node can be configured to listen on a particular path.
 When an HTTP request arrives on that path the node is triggered. It generates
 a message containing information about the request and passes it on to the nodes
 it is wired to. They in turn do whatever work they need to do using the message.

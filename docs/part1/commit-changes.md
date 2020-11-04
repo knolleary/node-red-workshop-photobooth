@@ -38,4 +38,4 @@ changes you've made in your project.
 
 Your Node-RED environment is all setup now for the rest of this workshop.
 
-In the next part, we'll start looking at [Node-RED Dashboard](/part2/).
+In the next part, we'll start looking at [Node-RED Dashboard](../part2/).

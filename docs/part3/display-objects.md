@@ -44,7 +44,7 @@ of the image.
 ## Adding a table of objects
 
 Install the module `node-red-node-ui-table` using the Manage Palette option in the
-editor, or be running the following command in `~/.node-red`:
+editor, or run the following command in `~/.node-red`:
 
 ```
 npm install node-red-node-ui-table
@@ -59,7 +59,7 @@ data.
     - Set the name to 'Objects'
     - Set the width to `6` by clicking the button and dragging the box out to 6
       units wide.
-    - Untick the 'Display group name' option
+    - Untick the 'Display group name' option.
 3. Add a new `ui_table` node from the "dashboard" section of the palette into your
    workspace. Edit its properties as follows:
     - Add it to the 'Objects' group
@@ -72,7 +72,10 @@ data.
 
 
 4. Add a Change node to the workspace. Configure it to set `msg.payload` to the
-   expression `$append([],payload.{"class":class,"score":score*100,"bbox":bbox})`
+   expression 
+   ```
+   $append([],payload.{"class":class,"score":score*100,"bbox":bbox})
+   ```
 
     !!! note
         Make sure you select the `expression` type for the `to` field of the Change node.

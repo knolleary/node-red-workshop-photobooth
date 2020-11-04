@@ -28,10 +28,10 @@ its features as well as manage its tabs, groups and widgets.
 
        ![](../images/db-group.png){: style="width: 250px"}
 
-    - Set the name to 'WebCam'
+    - Set the name to `WebCam`
     - Set the width to `10` by clicking the button and dragging the box out to 10
       units wide.
-    - Untick the 'Display group name' option
+    - Untick the 'Display group name' option.
 
        ![](../images/db-group-edit.png){: style="width: 300px"}
 
@@ -126,7 +126,7 @@ The next task is to start writing the photo to a file.
 2. Configure the Change node as follows:
      - Change the default rule to set `msg.filename` instead of `msg.payload`.
      - Change the type of the `to` field to `expression` (click the drop-down
-       arrow on the left-hand edge of the field to slect the type)
+       arrow on the left-hand edge of the field to select the type)
      - Set the value of the `to` field to:
 
             '/tmp/webcam_'& $moment().format('YYYY-MM-DD-hhmmss') & '.jpeg'
