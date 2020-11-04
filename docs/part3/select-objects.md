@@ -100,7 +100,7 @@ of the palette.
 The next task is to take the output of the `ui_table` node when an object is clicked
 and get it into the right format required by the `annotate-image` node.
 
-The annotate node expects two properties to be set on the message it is give:
+The annotate node expects two properties to be set on the message it is sent:
  - `msg.payload` should be a Buffer containing the image in JPEG format
  - `msg.annotations` should be an array of the annotations it should apply to the image.
 
@@ -195,7 +195,7 @@ You can see they are very similar, but some work is needed to map between them.
 
        2. This opens the JSONata editor. You can edit the expression in the top
           pane. In the lower pane is a Function Reference and a Test tab. Click
-          on the Test tab. This shows a example message on the left and the result
+          on the Test tab. This shows an example message on the left and the result
           of the expression on the right.
 
           ![](../images/jsonata-editor.png){:style="width: 400px"}
@@ -210,7 +210,7 @@ You can see they are very similar, but some work is needed to map between them.
 
 You should now have a flow that starts with the `ui_table` node, passes through
 a `Change` node to format the message, then to an `annotate image` node and finally
-to the `ui_webcam` node, possibly via a Link node.
+to the `ui_webcam` node, possibly via a `Link` node.
 
 Before deploying these changes there are couple more changes to the flow needed.
 We aren't going to use the image produced by the `tf coco ssd` node anymore.
@@ -232,4 +232,4 @@ This is what the final flow should look like:
 
 ## Next Steps
 
-With the application complete, the next task is to [wrap it in a container](/part4/).
+With the application complete, the next task is to [wrap it in a container](../part4/).
